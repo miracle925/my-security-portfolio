@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Custom scrollbar to match theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; /* Blue 500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
+        
+        /* New Body Background for visible blur effect */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Using a gradient background to clearly show the blur (frosted glass) effect on the hero section */
+            background: radial-gradient(at top left, #e0f2fe, #f7fafc); 
+            color: #1a202c; /* Dark text */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-blue-600 tracking-wider">
+                Nna Miracle C.
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <a href="#about" class="hover:text-blue-600 transition duration-150">About</a>
+                <a href="#education" class="hover:text-blue-600 transition duration-150">Education</a>
+                <a href="#skills" class="hover:text-blue-600 transition duration-150">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition duration-150">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <!-- 1. HERO Section (Personal Summary) -->
+        <!-- Applied backdrop-blur-md and changed to semi-transparent background (bg-white/90) for frosted glass effect -->
+        <section id="hero" class="text-center py-20 bg-white/90 backdrop-blur-md rounded-xl shadow-2xl border-b-4 border-blue-500">
+            <div class="flex justify-center mb-6">
+                <!-- PHOTO UPDATED to a placeholder URL (MC) so it displays correctly outside the editor -->
+                <img src="https://placehold.co/144x144/3B82F6/ffffff?text=MC" alt="Miracle C. Placeholder Photo"
+                    class="rounded-full w-36 h-36 object-cover border-4 border-blue-500 shadow-md">
+            </div>
+            <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-3">
+                Hello, I'm Miracle
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 font-light max-w-3xl mx-auto">
+                Entry-level Cybersecurity Analyst skilled in SQL Log Analysis, Linux Hardening, and Security Automation. Dedicated to building robust defenses and protecting digital assets.
+            </p>
+            <div class="space-x-4">
+                <a href="#contact"
+                    class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Get In Touch
+                </a>
+                <a href="https://github.com/miracle925" target="_blank"
+                    class="inline-block px-8 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                    View GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT Section -->
+        <section id="about" class="py-16">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8 border-l-4 border-blue-500 pl-4">About Me</h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    As a Computer Engineering student, I am pursuing a specialization in cybersecurity to merge strong foundational technical knowledge with critical security practices. I successfully completed the Google Cybersecurity Professional Certificate on Coursera, providing me with practical experience in key security domains.
+                </p>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    My goal is to transition into an advanced Security Analyst role. I am continuously expanding my skillset through additional certifications and hands-on projects, focusing on incident response, system hardening, and data forensics to solve complex security challenges.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 2.5. EDUCATION Section -->
+        <section id="education" class="py-16">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8 border-l-4 border-blue-500 pl-4">Education & Certifications</h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg space-y-8">
+                
+                <!-- University Degree -->
+                <div class="border-b pb-4">
+                    <h4 class="text-2xl font-semibold text-blue-600">B.Eng. Computer Engineering</h4>
+                    <p class="text-xl text-gray-800 mt-1">Edo State University Iyamho</p>
+                    <p class="text-lg text-gray-500 mt-1">Expected Graduation: August 2026</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 ml-4">
+                        <li>Relevant Coursework: Network Security, Data Structures & Algorithms, Operating Systems.</li>
+                        <li>Focus Area: Network Infrastructure and Embedded Systems Security.</li>
+                    </ul>
+                </div>
+
+                <!-- Certification -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-blue-600">Google Cybersecurity Professional Certificate</h4>
+                    <p class="text-xl text-gray-800 mt-1">Coursera / Google</p>
+                    <p class="text-lg text-gray-500 mt-1">Completed: 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 ml-4">
+                        <li>Covered topics including SIEM tools, Python scripting for security, and asset protection.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. SKILLS Section -->
+        <section id="skills" class="py-16">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8 border-l-4 border-blue-500 pl-4">Technical Skills</h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Skill Group 1: Foundations & Languages (Cybersecurity Focus) -->
+                <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Foundations & Languages</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-200 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python (Scripting)</span>
+                        <span class="bg-blue-200 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Linux/CLI</span>
+                        <span class="bg-blue-200 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Networking (TCP/IP)</span>
+                        <span class="bg-blue-200 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Cloud Infrastructure</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 2: Security Operations (SecOps) -->
+                <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-600">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Security Operations (SecOps)</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-200 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Threat Analysis</span>
+                        <span class="bg-green-200 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Vulnerability Assessment</span>
+                        <span class="bg-green-200 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Incident Response</span>
+                        <span class="bg-green-200 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Security Information and Event Management (SIEM)</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 3: Compliance & Governance -->
+                <div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-600">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Compliance & Governance</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Risk Management</span>
+                        <span class="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Security Policies</span>
+                        <span class="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Forensics Fundamentals</span>
+                        <span class="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Identity and Access Management (IAM)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS Section -->
+        <section id="projects" class="py-16">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8 border-l-4 border-blue-500 pl-4">Featured Projects</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: LINUX FILE PERMISSIONS AUDIT - UPDATED -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 border-t-8 border-green-600">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Linux Access Control Hardening (CLI)</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Audited directory permissions for a research team to enforce security controls. Utilized Linux CLI commands (`ls -la`, **`chmod g-x drafts`**) to precisely **remove group execute permissions** on critical folders, ensuring **data integrity** and **preventing unauthorized execution.**</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-200 text-xs font-semibold px-2 py-0.5 rounded">Linux/CLI</span>
+                            <span class="bg-green-200 text-xs font-semibold px-2 py-0.5 rounded">Access Control</span>
+                            <span class="bg-green-200 text-xs font-semibold px-2 py-0.5 rounded">Security Operations</span>
+                            <span class="bg-green-200 text-xs font-semibold px-2 py-0.5 rounded">chmod/ls</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/miracle925" target="_blank"
+                                class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                View Documentation →
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 font-medium text-sm cursor-default">
+                                (No Live Demo)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: SQL LOG ANALYSIS & DATA FILTERING - UPDATED -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 border-t-8 border-blue-600">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Incident Forensics: SQL Log Filtering</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Leveraged **MariaDB SQL** to conduct forensic analysis during a security incident. Used **advanced filtering logic** (`AND`, `OR`, `LIKE`) to isolate key data points, including **failed login attempts after business hours** and identifying non-IT assets for remediation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-200 text-xs font-semibold px-2 py-0.5 rounded">SQL Queries</span>
+                            <span class="bg-blue-200 text-xs font-semibold px-2 py-0.5 rounded">Log Analysis</span>
+                            <span class="bg-blue-200 text-xs font-semibold px-2 py-0.5 rounded">Incident Investigation</span>
+                            <span class="bg-blue-200 text-xs font-semibold px-2 py-0.5 rounded">Data Forensics</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/miracle925" target="_blank"
+                                class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                View Documentation →
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 font-medium text-sm cursor-default">
+                                (No Live Demo)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3: PYTHON FILE UPDATE ALGORITHM - UPDATED -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 border-t-8 border-red-600">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Security Automation: Python Allow List Manager</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Designed and implemented a **Python script** to automate access control list updates. The script uses secure **file I/O** and filtering logic to promptly **remove unauthorized IP addresses** from `allow_list.txt`, eliminating human error and **streamlining risk mitigation.**</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-200 text-xs font-semibold px-2 py-0.5 rounded">Python (Scripting)</span>
+                            <span class="bg-red-200 text-xs font-semibold px-2 py-0.5 rounded">Security Automation</span>
+                            <span class="bg-red-200 text-xs font-semibold px-2 py-0.5 rounded">Access Control</span>
+                            <span class="bg-red-200 text-xs font-semibold px-2 py-0.5 rounded">File I/O</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/miracle925" target="_blank"
+                                class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                View Documentation →
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 font-medium text-sm cursor-default">
+                                (No Live Demo)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. CONTACT Section -->
+        <section id="contact" class="py-16 text-center">
+            <h3 class="text-4xl font-bold text-gray-800 mb-6">Let's Connect</h3>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                I am actively seeking new opportunities and collaborations. Feel free to reach out to discuss potential projects or roles!
+            </p>
+            
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Phone Numbers Display -->
+                <div class="text-lg text-gray-700 font-medium flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
+                    <span class="font-semibold">Call/Text:</span>
+                    <a href="tel:08116150195" class="text-blue-600 hover:text-blue-700 transition duration-150">08116150195</a>
+                    <a href="tel:09030162052" class="text-blue-600 hover:text-blue-700 transition duration-150">09030162052</a>
+                </div>
+
+                <!-- Contact Buttons (Email and LinkedIn) -->
+                <div class="flex flex-col sm:flex-row sm:space-x-6 sm:space-y-0 space-y-4 pt-4">
+                    <!-- Email Link -->
+                    <a href="mailto:miraclenna79@gmail.com"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-md transition duration-150 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        Email Me
+                    </a>
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/miracle-nna-026661288" target="_blank"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 shadow-md transition duration-150 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.3 3.6h-2.6V7.4c0 .4-.2.8-.8.8H5.9c-.6 0-.8-.4-.8-.8V3.6H2.5c-.7 0-1.2.5-1.2 1.2v10.4c0 .7.5 1.2 1.2 1.2h13.8c.7 0 1.2-.5 1.2-1.2V4.8c0-.7-.5-1.2-1.2-1.2zM7 14.8H4.6V8.6H7v6.2zM5.8 7.4c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4zM15.4 14.8h-2.4v-3.4c0-.8-.4-1.2-1.2-1.2s-1.2.4-1.2 1.2v3.4h-2.4V8.6h2.4v1.2h.1c.3-.6.9-1.2 2-1.2 1.3 0 2.2 1 2.2 2.7v3.5z" clip-rule="evenodd"></path></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2024 Nna Miracle C.. All rights reserved. Built with HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
